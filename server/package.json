@@ -5,7 +5,7 @@
   "author": "Goncalo Marques",
   "license": "MIT",
   "scripts": {
-    "test": "jest --detectOpenHandles",
+    "test": "jest",
     "test-watch": "jest --watch",
     "watch": "nodemon src/server.js",
     "start": "node src/server.js",
