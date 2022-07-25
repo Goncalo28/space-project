@@ -1,0 +1,19 @@
+{
+  "name": "space-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Goncalo Marques",
+  "license": "MIT",
+  "scripts": {
+    "install-server": "cd server && yarn",
+    "install-client": "cd client && yarn",
+    "install": "yarn install-server & yarn install-client",
+    "server-dev": "cd server && yarn watch",
+    "server": "cd server && yarn start",
+    "client": "cd client && yarn start",
+    "watch": "yarn server & yarn client",
+    "deploy": "cd client && yarn build && cd .. && cd server && yarn start",
+    "deploy-cluster": "cd client && yarn build && cd .. && cd server && yarn cluster",
+    "test": "cd client && yarn test && cd .. && cd server && yarn test"
+  }
+}
